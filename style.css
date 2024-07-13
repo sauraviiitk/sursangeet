@@ -1,0 +1,388 @@
+body{
+    background-color: black;
+    color: white;
+
+}
+.hamburger{
+ display: none;
+}
+.left{
+    width: 25vw;
+    position: relative;
+   
+}
+.right{
+    width: 75vw;
+    position: relative;
+}
+.home ul li{
+    width: 14px;
+    display: flex;
+    gap: 15px;
+}
+.home
+{
+    font-size: 1.2rem;
+    margin: 1rem;
+    padding: 0.3rem;
+    background-color: rgb(28, 28, 28);
+
+    
+    
+}
+.library{
+    
+    min-width: 25Vh;
+    height: 80vh;
+    border: 1px solid black;
+    margin-left:1rem ;
+    margin-right:1rem ;
+
+    background-color: rgb(28, 28, 28);
+    position: relative;
+    
+}
+.lib-cont{
+    font-size: 1.3rem;
+    justify-content: space-between;
+    padding: 1rem;
+}
+.lib-left{
+    gap: 0.4rem;
+
+}
+.ic-1{
+margin: 0.58rem;
+}
+.grey{
+    color: gray;
+    font-weight: 800;
+}
+.nav-bar{
+    height: 65px;
+    margin: 1rem;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(28, 28, 28);
+    border: none;
+    position: fixed;
+    width:75vw;
+    top: 5px;
+
+
+}
+.ic-2{
+ 
+    font-size: 1.5rem;
+    
+}
+.login button {
+
+    margin-right: 2rem;
+
+}
+
+.footer ul{
+    width: 20vw;
+    font-size: 0.85rem;
+    margin: 1rem;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    bottom: 0;
+    position: absolute;
+    gap: 0.1rem;
+}
+.content-hero{
+    margin-left:0.4rem;
+}
+.content-hero h1{
+    margin-top: 6rem;
+    margin-left: 1rem;
+
+}
+.card{
+width: 250px;
+height: 300px;
+border: 1px solid rgb(20, 19, 19);
+ box-shadow: 0px 0px 5px;
+
+
+}
+.card img{
+    width: 100%;
+    height: 70%;
+
+
+}
+.card h2{
+    text-align: center;
+}
+.card p{
+    margin: 5px;
+    padding: 5px;
+}
+.card-play{
+    position: relative;
+
+}
+.play{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: green;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 50%;
+    position: absolute;
+    left: 54%;
+opacity: 0;
+transition: opacity 0.3s ease;
+cursor: pointer;
+
+
+}.card-play:hover .play{
+    opacity: 1;
+ 
+}
+
+.card-container{
+    right: 100%;
+    width: 100%;
+
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1rem;
+    overflow-y: scroll;
+    max-height: 70vh;
+}
+.playbar{
+    background-color: rgb(22, 24, 24);
+    width: 68%;
+    height: 45px;
+    position: fixed;
+    bottom: 0;
+    padding: 12px;
+    margin-bottom: 1rem;
+    border: 1px solid blanchedalmond;
+    border-radius: 0.85rem;
+
+  
+}
+.songs-card{
+    height: 304px;
+    overflow: auto;
+    
+}
+::-webkit-scrollbar {
+    background-color: #252424; /* Background color of the scrollbar track */
+    border: 0.5px solid grey;
+    box-shadow: 0px 0px 1px 0.5px;
+    border-radius: 10px;
+    height: 5px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: grey; /* color of the thumb */
+    border-radius: 5px; /* roundness of the thumb */
+    height: 50px;
+}
+.songs-card ul{
+    margin: 0.5rem 2rem;
+  
+}
+.songs-card ul li{
+    list-style-type: decimal;
+    padding: 0.85rem;
+    word-wrap: break-word; /* Allow long words to break and wrap onto the next line */
+    max-width: 100%; /* Ensure each item does not exceed the width of its container */
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid black;
+    align-items: center;
+    padding: 10px ;
+    cursor: pointer;
+    box-shadow: 0px 0px 2px 0.5px;
+    margin: 15px 0px;
+
+
+}
+
+.Playlists{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid black;
+    align-items: center;
+    padding: 15px ;
+    cursor: pointer;
+    box-shadow: 0px 0px 2px 0.5px;
+    margin: 15px 0px;
+}
+.songname{
+    padding: 0 10px;
+   
+}
+.song-info{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.seekbar{
+    position: absolute;
+    width: 98%;
+ border: 2px solid red;
+ border: none;
+ background-color: white;
+ bottom: -10%;
+ border-radius: 12px;
+ height: 5px;
+ 
+}
+.circle{
+    width: 10px;
+    height: 10px;
+    border-radius:13px;
+position: relative;
+bottom:2px;
+    background-color: rgb(212, 187, 187);
+    left: 0%;
+    transition: left 0.5s;
+}
+.song-info,.song-time{
+    color: wheat;
+}
+.anosong{
+    display: flex;
+    justify-content: space-between;
+    width: 68%;
+}
+.anosong .play-btn{ 
+    width: 30%;
+}
+.anosong .song-info{
+ 
+    width: 50%;
+}
+.anosong .song-time{
+    position: absolute;
+    right: -2%;
+    width: 20%;
+}
+.seekbar{
+    cursor: pointer;
+}
+
+.cross{
+    position: absolute;
+    right: 8%;
+    top: 3.4%;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: red;
+    padding: 0.8rem;
+    box-shadow: 0px 0px 2px  5px rgb(12, 11, 11);
+    cursor:pointer;
+    display: none;
+}
+.hamburger{
+    cursor: pointer;
+}
+
+.play-btn{
+
+    cursor: pointer;
+}
+
+@media screen and (max-width:1100px) {
+    .left{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+    transition: all 0.5s;
+    left: -110%;
+    z-index: 1;
+
+    
+
+
+    }
+    .right{
+        width: 100vw;
+    }
+    .playbar{
+        width: 96%;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    
+    }
+    
+   
+    .nav-bar{
+        width: 100%;
+    }
+    .content-hero h1 {
+        margin-left: 20%;
+        
+    }
+    .card-container{
+        justify-content: center;
+
+        grid-template-columns: repeat(2,0.3fr);
+        gap: 30px;
+       width: 100%;
+       height: 75%;
+    }
+    .hamburger{
+      display: block;
+    }
+    .ic-2{
+        display: none;
+    }
+   .home{
+    margin: 0;
+
+   }
+   
+  .footer ul{
+    column-gap: 2rem;
+    margin: 3rem ;
+  }
+   .library{
+    height: 85%;
+    margin-left:0 ;
+    margin-right:0 ;
+   }
+   .cross{
+    top: 2%;
+   }
+   .anosong{
+  position: static;
+    top: 15%;
+ 
+   }
+  
+}
+@media screen and (max-width:515px) {
+    .card-container{
+        grid-template-columns: repeat(1,1fr);
+     
+    }
+    .card-play{
+        margin-left: 5rem;
+    }
+    .cross{
+        display:flex;
+    }
+    .seekbar{
+        position: absolute;
+        bottom: -10%;
+    }
+    .playbar{
+        padding: 0 2rem;
+    }
+}
